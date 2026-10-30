@@ -1,4 +1,4 @@
-def sum_of_two_exists(numbers: list[int], sum: int):
+def sum_of_two_exists(numbers: list[int], sum: int) -> bool:
     """
     Optional task for advanced students
     To apply only the types discussed at the course up to now
@@ -13,8 +13,7 @@ def sum_of_two_exists(numbers: list[int], sum: int):
     while i < length:
         j = i + 1
         while j < length:
-            if numbers[i] + numbers[j] == sum:
-                return True
+            if numbers[i] + numbers[j] == sum: return True
             j += 1
         i += 1
         

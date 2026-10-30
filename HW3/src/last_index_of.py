@@ -1,4 +1,4 @@
-def last_index_of(numbers: list[int], num: int):
+def last_index_of(numbers: list[int], num: int) -> int:
     """
     "numbers" - list with int numbers; "num" - int
     if "num" exists in "numbers", returns index of its last occurrence,
