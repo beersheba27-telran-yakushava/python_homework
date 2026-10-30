@@ -1,7 +1,20 @@
-# HW 1 definition
-## Fill TODO comments of the file lotto.py
-running *python lotto.py* should display out 7 distinct random numbers in the range [1, 49]
-## Fill TODO comments of the file palindromic_numbers.py
-running *python palindromic_numbers.py* should display out the following
-- [22, 33]
-- [33, 22]
+# Tel-Ran Python Course Homework
+
+This repository contains my homework assignments completed during the Python Programming Course at **Tel-Ran**.
+
+## 🛠️ Technologies & Tools
+
+* **Language:** Python 3.10+
+* **IDE:** Visual Studio Code
+* **Version Control:** Git & GitHub
+
+## 📝 Course Topics Covered
+
+* **Basics:** Syntax, variables, conditional statements (`if/else`), and loops (`for/while`).
+* **Data Structures:** Working with strings, lists, dicts, sets, and tuples.
+* **Functional Programming:** Writing reusable code, arguments, and lambda functions.
+* **File Handling & Modules:** Reading/writing files, working with JSON, and standard libraries.
+* **OOP (Object-Oriented Programming):** Classes, inheritance, polymorphism, and encapsulation *(optional - add if applicable)*.
+
+---
+*Maintained by [Ala Yakushava](https://github.com/ala-yakushava)*
