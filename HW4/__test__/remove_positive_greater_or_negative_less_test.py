@@ -1,5 +1,5 @@
 import pytest
-from remove_positive_greater_or_negative_less import remove_positive_greater_or_negative_less
+from HW4.src.remove_positive_greater_or_negative_less import remove_positive_greater_or_negative_less
 
 @pytest.mark.parametrize("numbers, positive_lim, negative_lim, expected", [
     ([1, 2, 11, -3, 10, 15], 10, -3, [1, 2, -3, 10]),

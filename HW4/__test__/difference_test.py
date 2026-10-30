@@ -1,5 +1,5 @@
 import pytest
-from difference import difference  # Importing the new function from functions.py
+from HW4.src.difference import difference
 
 @pytest.mark.parametrize("l1, l2, expected", [
     ([1, 2, 3], [4, 3, 1], [2]),

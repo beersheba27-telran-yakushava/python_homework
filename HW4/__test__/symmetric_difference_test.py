@@ -1,5 +1,5 @@
 import pytest
-from symmetric_difference import symmetric_difference
+from HW4.src.symmetric_difference import symmetric_difference
 
 @pytest.mark.parametrize("l1, l2, expected", [
     ([1, 2, 3], [4, 3, 1], [2, 4]),

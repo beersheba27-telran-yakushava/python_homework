@@ -1,5 +1,5 @@
 import pytest
-from union import union
+from HW4.src.union import union
 
 @pytest.mark.parametrize("l1, l2, expected", [
     ([1, 2, 3], [4, 3, 1], [1, 2, 3, 4]),
