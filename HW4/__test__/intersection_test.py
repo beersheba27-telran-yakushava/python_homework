@@ -1,6 +1,5 @@
 import pytest
-
-from intersection import intersection
+from HW4.src.intersection import intersection
 
 @pytest.mark.parametrize("l1, l2, expected", [
     ([1, 2, 3], [4, 3, 1], [1, 3]),

@@ -1,5 +1,5 @@
 import pytest
-from max_with_negative_duplicate import max_with_negative_duplicate
+from HW4.src.max_with_negative_duplicate import max_with_negative_duplicate
 
 @pytest.mark.parametrize("numbers, expected", [
     ([-100, 20, 10, -10, 1, 1, 5, -30, -20, 100], 100),
