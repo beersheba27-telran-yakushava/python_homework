@@ -6,3 +6,12 @@ def sum_of_two_exists(numbers:list[int], sum: int) -> bool:
     Examples: sumOfTwoExists([1, -1, 40, 50, 0], 0) => True;
     sumOfTwoExists([1, -1, 40, 50, 0], 42) => False
     """
+    seen: set[int] = set()
+
+    for num in numbers:
+        complement = sum - num
+        if complement in seen:
+            return True
+        seen.add(num)
+
+    return False
