@@ -10,3 +10,8 @@ def bubble_sort(numbers: list[int]) -> None:
     Totally 6 iterations: step 1 has 3 iterations, step 2 has 2 iterations ans step 4 has 1 iteratiion
     Common formula of the number of iterations for worst case is (n * (n - 1))/2
     """
+    n = len(numbers)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if numbers[j] > numbers[j + 1]:
+                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
