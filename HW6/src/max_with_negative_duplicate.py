@@ -1,4 +1,4 @@
-def max_with_negative_duplicate (numbers:list[int]) -> int:
+def max_with_negative_duplicate (numbers: list[int]) -> int:
     """
     Algorithm complexity should be O[N]
     numbers - list with integer numbers
@@ -10,9 +10,9 @@ def max_with_negative_duplicate (numbers:list[int]) -> int:
     """
     seen = set(numbers)
     max_val = -1
-    
+
     for num in numbers:
         if num > 0 and num > max_val and -num in seen:
             max_val = num
-            
+
     return max_val
