@@ -16,14 +16,14 @@ def merge(
     For example, merge([-11, 3, 5, 7], [-20, -10, 0, 4])  => [-20, -11, -10, 0, 3, 4, 5, 7]
     merge([3, 5, 7, -11 ], [ 0, 4, -10, -20 ], abs)  => [ 0, 3, 4, 5, 7, -10, -11,-20]
     """
-    key_func: Callable[[T], Any] = (key if key is not None else lambda x: cast(Any, x))
+    if not key: key = lambda x: cast(Any, x)
 
     result: list[T] = []
     i, j = 0, 0
     len1, len2 = len(part1), len(part2)
 
     while i < len1 and j < len2:
-        if key_func(part1[i]) > key_func(part2[j]):
+        if key(part1[i]) > key(part2[j]):
             result.append(part2[j])
             j += 1
         else:
