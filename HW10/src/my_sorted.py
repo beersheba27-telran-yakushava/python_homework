@@ -19,13 +19,11 @@ def my_sorted[T, K](items: Sequence[T], /, *, key:Callable[[T], T|K]|None=None) 
     if n <= 1: return list(items)
 
     chunk_size = int(sqrt(n))
-    parts: list[list[T]] = []
-
-    for i in range(0, n, chunk_size):
-        if n - i < chunk_size and parts:
-            parts[-1].extend(items[i:])
-            break
-        parts.append(list(items[i : i + chunk_size]))
+    parts = [
+        list(items[i * chunk_size : (i + 1) * chunk_size])
+        for i in range(chunk_size - 1)
+    ]
+    parts.append(list(items[(chunk_size - 1) * chunk_size :]))
 
     sorted_parts = [bubble_sorted(part, key=key) for part in parts]
 
