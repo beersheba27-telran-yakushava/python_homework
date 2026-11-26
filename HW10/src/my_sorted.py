@@ -1,8 +1,8 @@
 from collections.abc import Callable, Sequence
 from math import sqrt
 
-from HW8.src.bubble_sorted import bubble_sorted
-from HW8.src.merge import merge
+from HW08.src.bubble_sorted import bubble_sorted
+from HW08.src.merge import merge
 
 def my_sorted[T, K](items: Sequence[T], /, *, key:Callable[[T], T|K]|None=None) -> list[T]:
     """
